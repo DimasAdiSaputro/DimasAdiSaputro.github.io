@@ -33,25 +33,23 @@
             border-radius: 0.5rem;
         }
         /* CSS untuk iframe di dalam CV Viewer Section */
-        /* CSS untuk iframe di dalam CV Viewer Section */
         
         .cv-iframe {
-            width: 50%;
-            /* Lebar 50% */
+            width: 100%;
+            /* Lebar penuh agar tidak terpotong */
+            max-width: 800px;
+            /* Batas maksimum untuk layar besar */
             height: 500px;
-            /* Tinggi default untuk layar besar */
             border: 1px solid #d1d5db;
-            /* Border default */
             border-radius: 0.5rem;
-            /* Radius border */
             margin: 0 auto;
-            /* Memusatkan iframe */
+            overflow: auto;
         }
         
         @media (max-width: 640px) {
             .cv-iframe {
-                height: 400px;
-                /* Mengatur tinggi iframe menjadi 400px pada layar kecil */
+                height: 600px;
+                /* Tambah tinggi agar bisa scroll isi PDF di mobile */
             }
         }
         
@@ -130,54 +128,54 @@
     <section id="cv" class="max-w-full mx-auto px-4 py-12" data-aos="fade-up">
         <h3 class="text-2xl font-semibold mb-4 text-center">Curriculum Vitae</h3>
         <div class="flex justify-center w-full">
-            <iframe src="https://dimasadisaputro.github.io/CV ATS Dimas (ENG).pdf" title="CV Dimas Adi Saputro" class="cv-iframe" allowfullscreen></iframe>
+            <iframe src="https://dimasadisaputro.github.io/CV ATS Dimas (ENG).pdf" title="CV Dimas Adi Saputro" class="cv-iframe" allowfullscreen loading="lazy"></iframe>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-white dark:bg-gray-800 py-12">
-        <div class="max-w-5xl mx-auto px-4">
-            <h3 class="text-2xl font-semibold mb-6" data-aos="fade-up">Projects</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow" data-aos="zoom-in">
-                    <img src="images/api.png" alt="Project 1" class="project-image mb-4">
-                    <h4 class="font-bold text-lg">Web Application SIP-ALKER (Work Equipment Inventory Information System) </h4>
-                    <p class="text-sm mb-2">Laravel 11 (PHP)</p>
+    <section id="projects " class="bg-white dark:bg-gray-800 py-12 ">
+        <div class="max-w-5xl mx-auto px-4 ">
+            <h3 class="text-2xl font-semibold mb-6 " data-aos="fade-up ">Projects</h3>
+            <div class="grid md:grid-cols-2 gap-6 ">
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
+                    <img src="images/api.png " alt="Project 1 " class="project-image mb-4 ">
+                    <h4 class="font-bold text-lg ">Web Application SIP-ALKER (Work Equipment Inventory Information System) </h4>
+                    <p class="text-sm mb-2 ">Laravel 11 (PHP)</p>
                     <p>Based on Web at PT. Andalan Pratama Indonusa. There are 2 categories of users involved, namely Admin (Warehouse staff), and User (Technician). Admin is the one who manages the master data on the website such as changing, deleting,
                         and adding data, has access to receive reports, follow up on those received and update reports. While users (Technicians) who already have an account registered in the SIP-ALKER Application (Work Equipment Inventory Information
                         System) Based on Web at PT. Andalan Pratama Indonusa, can borrow work tools, report damaged goods, return tools that have been borrowed and can see the notification status as a notification</p>
                 </div>
-                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow" data-aos="zoom-in">
-                    <img src="images/pln.png" alt="Project 2" class="project-image mb-4">
-                    <h4 class="font-bold text-lg">Postpaid electricity payment application</h4>
-                    <p class="text-sm mb-2">Codeigniter 3 (PHP)</p>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
+                    <img src="images/pln.png " alt="Project 2 " class="project-image mb-4 ">
+                    <h4 class="font-bold text-lg ">Postpaid electricity payment application</h4>
+                    <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>This postpaid electricity bill payment method feels more familiar because initially PLN only implemented postpaid bills. In this system, electricity bill payments are charged at the end of the month with a nominal amount according
                         to usage.</p>
                 </div>
-                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow" data-aos="zoom-in">
-                    <img src="images/mywallet.png" alt="Project 3" class="project-image mb-4">
-                    <h4 class="font-bold text-lg">MyWallet application</h4>
-                    <p class="text-sm mb-2">Codeigniter 3 (PHP)</p>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
+                    <img src="images/mywallet.png " alt="Project 3 " class="project-image mb-4 ">
+                    <h4 class="font-bold text-lg ">MyWallet application</h4>
+                    <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>MyWallet is an easy and accurate financial recording application. In using this application can be done anywhere and anytime. Effective and efficient, no need to open a financial recording journal anywhere, with this application will
                         make it easier for its users.</p>
                 </div>
-                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow" data-aos="zoom-in">
-                    <img src="images/pustaka booking 2.png" alt="Project 4" class="project-image mb-4">
-                    <h4 class="font-bold text-lg">Pustaka Booking</h4>
-                    <p class="text-sm mb-2">Codeigniter 3 (PHP)</p>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
+                    <img src="images/pustaka booking 2.png " alt="Project 4 " class="project-image mb-4 ">
+                    <h4 class="font-bold text-lg ">Pustaka Booking</h4>
+                    <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>Library ordering application which is an application for managing book borrowing transactions, as well as reports in the form of book borrowing contents which will be inputted by users and admins.</p>
                 </div>
-                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow" data-aos="zoom-in">
-                    <img src="images/wp.png" alt="Project 5" class="project-image mb-4">
-                    <h4 class="font-bold text-lg">Decision support system applications</h4>
-                    <p class="text-sm mb-2">Codeigniter 3 (PHP)</p>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
+                    <img src="images/wp.png " alt="Project 5 " class="project-image mb-4 ">
+                    <h4 class="font-bold text-lg ">Decision support system applications</h4>
+                    <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>This application uses the Weighted Product (WP) method which is able to provide decision results in the form of restaurant recommendations based on criteria and provide results based on the highest alternative value. The research criteria
                         in choosing a restaurant are based on food price, food taste, service and atmosphere. The alternatives given are ten recommended restaurants.</p>
                 </div>
-                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow" data-aos="zoom-in">
-                    <img src="images/StudyClub.png" alt="Project 6" class="project-image mb-4">
-                    <h4 class="font-bold text-lg">Study Club App</h4>
-                    <p class="text-sm mb-2">Codeigniter 3 (PHP)</p>
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
+                    <img src="images/StudyClub.png " alt="Project 6 " class="project-image mb-4 ">
+                    <h4 class="font-bold text-lg ">Study Club App</h4>
+                    <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>The Study Club application is a basic learning activity for CRUD PHP (Create, Read, Update, Delete). Students are taught learning materials that have not been understood to be discussed or taught again in detail in this activity.</p>
                 </div>
             </div>
@@ -185,46 +183,46 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="max-w-4xl mx-auto px-4 py-12" data-aos="fade-left">
-        <h3 class="text-2xl font-semibold mb-4">Contact</h3>
-        <form action="https://formsubmit.co/dimasadisaputr0699@gmail.com" method="POST" class="bg-white dark:bg-gray-800 p-6 rounded shadow space-y-4">
+    <section id="contact " class="max-w-4xl mx-auto px-4 py-12 " data-aos="fade-left ">
+        <h3 class="text-2xl font-semibold mb-4 ">Contact</h3>
+        <form action="https://formsubmit.co/dimasadisaputr0699@gmail.com " method="POST " class="bg-white dark:bg-gray-800 p-6 rounded shadow space-y-4 ">
             <div>
-                <label class="block mb-1 font-semibold">Name</label>
-                <input type="text" name="name" class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700" placeholder="Full name" required>
+                <label class="block mb-1 font-semibold ">Name</label>
+                <input type="text " name="name " class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700 " placeholder="Full name " required>
             </div>
             <div>
-                <label class="block mb-1 font-semibold">Phone</label>
-                <input type="tel" name="phone" class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700" placeholder="Your phone number" required>
+                <label class="block mb-1 font-semibold ">Phone</label>
+                <input type="tel " name="phone " class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700 " placeholder="Your phone number " required>
             </div>
             <div>
                 <label class=" block mb-1 font-semibold ">Email</label>
-                <input type="email " name="email " class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700 " placeholder="Email" required>
+                <input type="email " name="email " class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700 " placeholder="Email " required>
             </div>
             <div>
                 <label class="block mb-1 font-semibold ">Message</label>
-                <textarea name="message " rows="4 " class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700 " placeholder="Your message" required></textarea>
+                <textarea name="message " rows="4 " class="w-full border border-gray-300 p-2 rounded dark:bg-gray-700 " placeholder="Your message " required></textarea>
             </div>
             <!-- Optional: redirect ke halaman sukses -->
-            <input type="hidden" name="_next" value="https://dimasadisaputro.github.io/thanks.html">
+            <input type="hidden " name="_next " value="https://dimasadisaputro.github.io/thanks.html ">
 
             <!-- Optional: disable captcha -->
-            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden " name="_captcha " value="false ">
 
-            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 ">Send Message</button>
+            <button type="submit " class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 ">Send Message</button>
         </form>
         <p class="mt-4 text-sm ">Or reach me at: <a href="mailto: dimasadisaputr0699@gmail.com " class="text-blue-600 hover:underline ">dimasadisaputr0699@gmail.com</a></p>
     </section>
 
     <!-- WhatsApp Chat Button -->
-    <a href="https://wa.me/6281383444176 " class="whatsapp-float " target="_blank " rel="noopener" title="Chat on WhatsApp ">
+    <a href="https://wa.me/6281383444176 " class="whatsapp-float " target="_blank " rel="noopener " title="Chat on WhatsApp ">
         <i class="fab fa-whatsapp "></i>
     </a>
 
     <!-- Footer -->
     <footer class="bg-white dark:bg-gray-800 shadow py-6 text-center ">
         <div class="mb-2 space-x-4 ">
-            <h6 class="text-2xl font-semibold mb-4">build social media connections with me </h6>
-            <a href="https://github.com/DimasAdiSaputro " target="_blank " rel="noopener" title="github dimas " class=" text-gray-600 dark:text-gray-300 hover:text-blue-600 "><i class="fab fa-github fa-lg "></i></a>
+            <h6 class="text-2xl font-semibold mb-4 ">build social media connections with me </h6>
+            <a href="https://github.com/DimasAdiSaputro " target="_blank " rel="noopener " title="github dimas " class=" text-gray-600 dark:text-gray-300 hover:text-blue-600 "><i class="fab fa-github fa-lg "></i></a>
             <a href="https://www.linkedin.com/in/dimas-adi-saputro-a81550195 " target="_blank " rel="noopener " title="linkedin dimas " class="text-gray-600 dark:text-gray-300 hover:text-blue-600 "><i class="fab fa-linkedin fa-lg "></i></a>
             <a href="https://instagram.com/dimas_saputra06 " target="_blank " rel="noopener " title="Instagram dimas " class="text-gray-600 dark:text-gray-300 hover:text-blue-600 "><i class="fab fa-instagram fa-lg "></i></a>
             <a href="https://twitter.com/dimas_saputro06 " target="_blank " rel="noopener " title="twitter dimas " class="text-gray-600 dark:text-gray-300 hover:text-blue-600 "><i class="fab fa-twitter fa-lg "></i></a>
