@@ -128,52 +128,54 @@
     <section id="cv" class="max-w-full mx-auto px-4 py-12" data-aos="fade-up">
         <h3 class="text-2xl font-semibold mb-4 text-center">Curriculum Vitae</h3>
         <div class="flex justify-center w-full">
-            <iframe src="https://dimasadisaputro.github.io/CV ATS Dimas (ENG).pdf" title="CV Dimas Adi Saputro" class="cv-iframe" allowfullscreen loading="lazy"></iframe>
+            <iframe src="https://dimasadisaputro.github.io/CV ATS Dimas (ENG).pdf" title="CV Dimas Adi Saputro" class="cv-iframe" allowfullscreen></iframe>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects " class="bg-white dark:bg-gray-800 py-12 ">
-        <div class="max-w-5xl mx-auto px-4 ">
-            <h3 class="text-2xl font-semibold mb-6 " data-aos="fade-up ">Projects</h3>
-            <div class="grid md:grid-cols-2 gap-6 ">
-                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
-                    <img src="images/api.png " alt="Project 1 " class="project-image mb-4 ">
-                    <h4 class="font-bold text-lg ">Web Application SIP-ALKER (Work Equipment Inventory Information System) </h4>
-                    <p class="text-sm mb-2 ">Laravel 11 (PHP)</p>
+    <section id="projects" class="bg-white dark:bg-gray-800 py-12">
+        <div class="max-w-5xl mx-auto px-4">
+            <h3 class="text-2xl font-semibold mb-6 text-center" data-aos="fade-up">Projects</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <!-- Card 1 -->
+                <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow" data-aos="zoom-in">
+                    <img src="images/api.png" alt="Project 1" onclick="openModal('images/api.png', 'Web Application SIP-ALKER (Work Equipment Inventory Information System)', '')" class="project-image mb-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105">
+                    <h4 class="font-bold text-lg">Web Application SIP-ALKER (Work Equipment Inventory Information System)</h4>
+                    <p class="text-sm mb-2">Laravel 11 (PHP)</p>
                     <p>Based on Web at PT. Andalan Pratama Indonusa. There are 2 categories of users involved, namely Admin (Warehouse staff), and User (Technician). Admin is the one who manages the master data on the website such as changing, deleting,
                         and adding data, has access to receive reports, follow up on those received and update reports. While users (Technicians) who already have an account registered in the SIP-ALKER Application (Work Equipment Inventory Information
-                        System) Based on Web at PT. Andalan Pratama Indonusa, can borrow work tools, report damaged goods, return tools that have been borrowed and can see the notification status as a notification</p>
+                        System) Based on Web at PT. Andalan Pratama Indonusa, can borrow work tools, report damaged goods, return tools that have been borrowed and can see the notification status as a notification.</p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
-                    <img src="images/pln.png " alt="Project 2 " class="project-image mb-4 ">
+                    <img src="images/pln.png " alt="Project 2 " onclick="openModal('images/pln.png', 'Web Application SIP-ALKER (Work Equipment Inventory Information System)', '')" class="project-image mb-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105">
                     <h4 class="font-bold text-lg ">Postpaid electricity payment application</h4>
                     <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>This postpaid electricity bill payment method feels more familiar because initially PLN only implemented postpaid bills. In this system, electricity bill payments are charged at the end of the month with a nominal amount according
                         to usage.</p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
-                    <img src="images/mywallet.png " alt="Project 3 " class="project-image mb-4 ">
+                    <img src="images/mywallet.png " alt="Project 3 " onclick="openModal('images/mywallet.png', 'Web Application SIP-ALKER (Work Equipment Inventory Information System)', '')" class="project-image mb-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105">
                     <h4 class="font-bold text-lg ">MyWallet application</h4>
                     <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>MyWallet is an easy and accurate financial recording application. In using this application can be done anywhere and anytime. Effective and efficient, no need to open a financial recording journal anywhere, with this application will
                         make it easier for its users.</p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
-                    <img src="images/pustaka booking 2.png " alt="Project 4 " class="project-image mb-4 ">
+                    <img src="images/pustaka booking 2.png " alt="Project 4 " onclick="openModal('images/pustaka booking 2.png', 'Web Application SIP-ALKER (Work Equipment Inventory Information System)', '')" class="project-image mb-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105">
                     <h4 class="font-bold text-lg ">Pustaka Booking</h4>
                     <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>Library ordering application which is an application for managing book borrowing transactions, as well as reports in the form of book borrowing contents which will be inputted by users and admins.</p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
-                    <img src="images/wp.png " alt="Project 5 " class="project-image mb-4 ">
+                    <img src="images/wp.png " alt="Project 5 " onclick="openModal('images/wp.png', 'Web Application SIP-ALKER (Work Equipment Inventory Information System)', '')" class="project-image mb-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105">
                     <h4 class="font-bold text-lg ">Decision support system applications</h4>
                     <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>This application uses the Weighted Product (WP) method which is able to provide decision results in the form of restaurant recommendations based on criteria and provide results based on the highest alternative value. The research criteria
                         in choosing a restaurant are based on food price, food taste, service and atmosphere. The alternatives given are ten recommended restaurants.</p>
                 </div>
                 <div class="bg-gray-50 dark:bg-gray-700 p-6 rounded shadow " data-aos="zoom-in ">
-                    <img src="images/StudyClub.png " alt="Project 6 " class="project-image mb-4 ">
+                    <img src="images/StudyClub.png " alt="Project 6 " onclick="openModal('images/StudyClub.png', 'Web Application SIP-ALKER (Work Equipment Inventory Information System)', '')" class="project-image mb-4 rounded cursor-pointer transform transition-transform duration-300 hover:scale-105">
                     <h4 class="font-bold text-lg ">Study Club App</h4>
                     <p class="text-sm mb-2 ">Codeigniter 3 (PHP)</p>
                     <p>The Study Club application is a basic learning activity for CRUD PHP (Create, Read, Update, Delete). Students are taught learning materials that have not been understood to be discussed or taught again in detail in this activity.</p>
@@ -181,6 +183,16 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal Project Viewer -->
+    <div id="projectModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded max-w-2xl w-full relative shadow-lg">
+            <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-xl font-bold">&times;</button>
+            <img id="modalImage" src=" " alt="Project image" class="mb-4 rounded w-full object-cover">
+            <h4 id="modalTitle" class="text-xl font-bold mb-2"></h4>
+            <p id="modalDesc" class="text-gray-700 dark:text-gray-300"></p>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="max-w-4xl mx-auto px-4 py-12" data-aos="fade-left">
@@ -233,7 +245,18 @@
         </div>
         <p class="text-sm ">&copy;2025 Dimas Adi Saputro. All rights reserved.</p>
     </footer>
+    <script>
+        function openModal(imgSrc, title, desc) {
+            document.getElementById('modalImage').src = imgSrc;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalDesc').textContent = desc;
+            document.getElementById('projectModal').classList.remove('hidden');
+        }
 
+        function closeModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+        }
+    </script>
 </body>
 
 </html>
